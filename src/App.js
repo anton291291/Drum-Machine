@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+import 'animate.css/animate.min.css'
 
 const audioData = [
   {
@@ -59,12 +60,12 @@ const audioData = [
 ]
 
 const unactiveStyle= {
-  backgroundColor: 'rgb(31, 181, 26)'
+  backgroundColor: 'rgb(222, 203, 8)'
 }
 
 
 const activeStyle= {
-  backgroundColor: 'rgb(177, 46, 179)'
+  backgroundColor: 'rgb(22, 179, 158)'
 }
 
 
@@ -114,7 +115,7 @@ class DrumButton extends React.Component {
       <>
       <button
         style={this.state.style}
-        className="drum-pad"
+        className="drum-pad animated rollIn"
         id={this.props.id}
         onClick={this.playSound}
         >
@@ -163,7 +164,7 @@ class App extends Component {
     )
     return (
       <div id="drum-machine">
-        <div id="drumPad">
+        <div id="drum-board">
           {drumPad}
         </div>
         <div id="display">{this.state.text}</div>
