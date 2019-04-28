@@ -56,7 +56,7 @@ const audioData = [
    keybordKey: 'C',
    id: 'Snare',
    url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
-  }
+ }
 ]
 
 const unactiveStyle= {
@@ -132,14 +132,12 @@ class DrumButton extends React.Component {
   }
 }
 
-
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       text: ""
     }
-
     this.updateDisplay= this.updateDisplay.bind(this)
   }
 
